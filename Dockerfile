@@ -2,9 +2,9 @@
 # https://github.com/hhcordero/docker-jmeter-server/blob/master/Dockerfile
 FROM alpine:3.6
 
-MAINTAINER Just van den Broecke<just@justobjects.nl>
+LABEL maintainer="acrhwfy@gmail.com"
 
-ARG JMETER_VERSION="3.3"
+ARG JMETER_VERSION="4.0"
 ENV JMETER_HOME /opt/apache-jmeter-${JMETER_VERSION}
 ENV	JMETER_BIN	${JMETER_HOME}/bin
 ENV	JMETER_DOWNLOAD_URL  http://mirrors.ocf.berkeley.edu/apache/jmeter/binaries/apache-jmeter-${JMETER_VERSION}.tgz
